@@ -4,7 +4,7 @@ import {
   Text,
   View,
 } from 'react-native';
-import Util from '../util/utils';
+import Util from '../util/Utils';
 import IconFA from 'react-native-vector-icons/FontAwesome';
 import Catalog from './Category/Catalog'
 import Goods from './Category/Goods'

@@ -10,7 +10,7 @@ import {
   ListView
 } from 'react-native';
 import IconFA from 'react-native-vector-icons/FontAwesome';
-import Util from '../util/utils';
+import Util from '../util/Utils';
 import Search from './Common/Search';
 import Link from './Home/Link';
 import Carousel from './Home/Carousel';

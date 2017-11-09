@@ -6,7 +6,7 @@ import {
   View,
   TouchableHighlight
 } from 'react-native';
-import Util from '../../util/utils';
+import Util from '../../util/Utils';
 import IconFA from 'react-native-vector-icons/FontAwesome';
 
 export default class Search extends Component<{}> {
