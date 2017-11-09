@@ -6,7 +6,7 @@ import {
   TouchableOpacity,
   ListView,
 } from 'react-native';
-import Util from '../../util/utils';
+import Util from '../../util/Utils';
 
 /**
  * 商品列表显示

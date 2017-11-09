@@ -6,7 +6,7 @@ import {
   Image,
   TouchableHighlight
 } from 'react-native';
-import Util from '../../util/utils';
+import Util from '../../util/Utils';
 import Swiper from 'react-native-swiper';
 
 export default class Carousel extends Component<{}> {
