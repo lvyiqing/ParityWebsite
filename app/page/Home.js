@@ -16,6 +16,7 @@ import Link from './Home/Link';
 import Carousel from './Home/Carousel';
 import Recommend from './Home/Recommend';
 import { StackNavigator } from 'react-navigation';
+import Login from './Common/Login';
 
  class Home extends Component<{}> {
     static navigationOptions = {
@@ -34,11 +35,11 @@ import { StackNavigator } from 'react-navigation';
       return (
             <ScrollView style={{backgroundColor: '#efede8',}}>
                 <View style={styles.title}>
-                    <Image source={require("../images/title.png")} />
+                    <Image style={styles.img} source={require("../images/title1.png")} />
                 </View>
                 <View style={styles.search} >
                     <Text style={styles.inpult}
-                    onPress={() => navigate('Search')}>
+                    onPress={() => navigate('Login')}>
                     <IconFA size={20} name="search" />
                     {"   "}请输入您想比价的商品或型号
                     </Text>
@@ -56,7 +57,7 @@ import { StackNavigator } from 'react-navigation';
   const child =  StackNavigator(
     {
         Home: {screen: Home},
-        Search: {screen: Search},
+        Login: {screen: Login},
     }
 );
 
@@ -65,6 +66,12 @@ import { StackNavigator } from 'react-navigation';
         marginTop:Util.size.width/20,
         flexDirection: 'row',
         justifyContent: 'center',
+        height: Util.size.height/8,
+        width: Util.size.width/1,
+    },
+    img: {
+        height: Util.size.height/10,
+        width: Util.size.width/1.8,
     },
     search: {
         marginTop:Util.size.width/30,

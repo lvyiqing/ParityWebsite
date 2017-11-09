@@ -13,16 +13,16 @@ export default class Search extends Component<{}> {
     render() {
         return(
         <View style={styles.shortcut}>
-            <View style={[styles.icons,{backgroundColor: '#ADADAD', borderColor: '#ADADAD'}]}>
+            <View style={[styles.icons,{backgroundColor: '#ea5252', borderColor: '#ea5252'}]}>
                 <IconFA size={20} name="search" style={styles.icon} />
             </View>
-            <View style={[styles.icons,{backgroundColor: '#ADADAD', borderColor: '#ADADAD'}]}>
+            <View style={[styles.icons,{backgroundColor: '#ea5252', borderColor: '#ea5252'}]}>
                 <IconFA size={20} name="search" style={styles.icon} />
             </View>
-            <View style={[styles.icons,{backgroundColor: '#ADADAD', borderColor: '#ADADAD'}]}>
+            <View style={[styles.icons,{backgroundColor: '#ea5252', borderColor: '#ea5252'}]}>
                 <IconFA size={20} name="search" style={styles.icon} />
             </View>
-            <View style={[styles.icons,{backgroundColor: '#ADADAD', borderColor: '#ADADAD'}]}>
+            <View style={[styles.icons,{backgroundColor: '#ea5252', borderColor: '#ea5252'}]}>
                 <IconFA size={20} name="search" style={styles.icon} />
             </View>
         </View> 
