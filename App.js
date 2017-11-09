@@ -7,12 +7,6 @@
 import React, { Component } from 'react';
 import {
   Platform,
-  StyleSheet,
-  Text,
-  View,
-  ScrollView,
-  TextInput,
-  Image
 } from 'react-native';
 import NavigatorTab from './app/page/NavigatorTab.js'
 

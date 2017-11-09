@@ -9,10 +9,13 @@ import {
   Image
 } from 'react-native';
 
-export default class Mypage extends Component<{}> {
-    static navigationOptions = {
-      tabBarLabel: '我的',
-    }
+export default class MyPage extends Component<{}> {
+    constructor() {
+        super();
+        this.state = {
+            selectedTab: '我的',
+        }
+      }
     render() {
       return (
         <ScrollView>

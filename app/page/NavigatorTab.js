@@ -2,18 +2,14 @@ import React, { Component } from 'react';
 import {
   Platform,
   StyleSheet,
-  Text,
   View,
-  ScrollView,
-  TextInput,
-  Image
 } from 'react-native';
 import TabNavigator from 'react-native-tab-navigator';
 import IconFA from 'react-native-vector-icons/FontAwesome';
 import Home from './Home';
 import Category from './Category';
 import Collection from './Collection';
-import Mypage from './Mypage';
+import MyPage from './MyPage';
 
 export default class Navigator extends Component<{}> {
 constructor() {
@@ -38,13 +34,13 @@ constructor() {
                         <Home />
                     </TabNavigator.Item>
                     <TabNavigator.Item
-                        selected={this.state.selectedTab === '比价'}
-                        title="比价"
+                        selected={this.state.selectedTab === '分类'}
+                        title="分类"
                         titleStyle={styles.tabText}
                         selectedTitleStyle={styles.selectedTabText}
                         renderIcon={() => <IconFA size={25} name="search" />}
                         renderSelectedIcon={() =><IconFA size={25} style={{color: "#ff8a00",}} name="search" />}
-                        onPress={() => this.setState({ selectedTab: '比价' })}>
+                        onPress={() => this.setState({ selectedTab: '分类' })}>
                         <Category />
                     </TabNavigator.Item>
                     <TabNavigator.Item
@@ -65,7 +61,7 @@ constructor() {
                         renderIcon={() => <IconFA size={25} name="user" />}
                         renderSelectedIcon={() =><IconFA size={25} style={{color: "#ff8a00",}} name="user" />}
                         onPress={() => this.setState({ selectedTab: '我的' })}>
-                        <Mypage />
+                        <MyPage />
                     </TabNavigator.Item>
                 </TabNavigator>
             </View>
