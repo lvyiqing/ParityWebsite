@@ -29,7 +29,7 @@ constructor() {
                         titleStyle={styles.tabText}
                         selectedTitleStyle={styles.selectedTabText}
                         renderIcon={() => <IconFA size={25} name="home" />}
-                        renderSelectedIcon={() =><IconFA size={25} style={{color: "#ff8a00",}} name="home" />}
+                        renderSelectedIcon={() =><IconFA size={25} style={{color: "#ea5252",}} name="home" />}
                         onPress={() => this.setState({ selectedTab: '首页' })}>
                         <Home />
                     </TabNavigator.Item>
@@ -39,7 +39,7 @@ constructor() {
                         titleStyle={styles.tabText}
                         selectedTitleStyle={styles.selectedTabText}
                         renderIcon={() => <IconFA size={25} name="search" />}
-                        renderSelectedIcon={() =><IconFA size={25} style={{color: "#ff8a00",}} name="search" />}
+                        renderSelectedIcon={() =><IconFA size={25} style={{color: "#ea5252",}} name="search" />}
                         onPress={() => this.setState({ selectedTab: '分类' })}>
                         <Category />
                     </TabNavigator.Item>
@@ -49,7 +49,7 @@ constructor() {
                         titleStyle={styles.tabText}
                         selectedTitleStyle={styles.selectedTabText}
                         renderIcon={() => <IconFA size={25} name="star" />}
-                        renderSelectedIcon={() =><IconFA size={25} style={{color: "#ff8a00",}} name="star" />}
+                        renderSelectedIcon={() =><IconFA size={25} style={{color: "#ea5252",}} name="star" />}
                         onPress={() => this.setState({ selectedTab: '收藏' })}>
                         <Collection />
                     </TabNavigator.Item>
@@ -59,7 +59,7 @@ constructor() {
                         titleStyle={styles.tabText}
                         selectedTitleStyle={styles.selectedTabText}
                         renderIcon={() => <IconFA size={25} name="user" />}
-                        renderSelectedIcon={() =><IconFA size={25} style={{color: "#ff8a00",}} name="user" />}
+                        renderSelectedIcon={() =><IconFA size={25} style={{color: "#ea5252",}} name="user" />}
                         onPress={() => this.setState({ selectedTab: '我的' })}>
                         <MyPage />
                     </TabNavigator.Item>
@@ -78,7 +78,7 @@ const styles = StyleSheet.create({
       fontSize: 13
   },
   selectedTabText: {
-      color: "#ff8a00",
+      color: "#ea5252",
       fontSize: 13
   },
 });

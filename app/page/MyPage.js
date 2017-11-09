@@ -30,7 +30,7 @@ class MyPage extends Component {
     render() {
       const { navigate } = this.props.navigation;
       return (
-        <ScrollView>
+        <ScrollView style={{backgroundColor: '#efede8'}}>
             <TouchableHighlight>
                 <View style={styles.headView}>
                     <View style={styles.head}>

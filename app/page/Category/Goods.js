@@ -104,15 +104,15 @@ export default class Content extends Component<{}> {
     ]
 
     constructor(props) {
-      super(props)
-      var ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
-      this.state = {
-        categoryIndex: 0,
-        dataSource: ds.cloneWithRows(this._data)
-      }
+        super(props)
+        var ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
+        this.state = {
+            categoryIndex: 0,
+            dataSource: ds.cloneWithRows(this._data)
+        }
     }
 
-    _renderGoodsList(rowData, sectionID, rowID, highlightRow) {
+    _renderGoodsList(rowData) {
 
         return(
             <TouchableOpacity activeOpacity={0.8}>  
