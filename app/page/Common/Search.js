@@ -12,12 +12,6 @@ import {
 import Util from '../../util/Utils';
 
 export default class Search extends Component<{}> {
-  constructor() {
-    super();
-    this.state = {
-        selectedTab: '首页',
-    }
-  }
     static navigationOptions = {
       tabBarVisible:false,
       headerTitle: <View style={{flexDirection: 'row', justifyContent: 'center', alignItems: 'center',}}>
