@@ -11,7 +11,7 @@ import {
 } from 'react-native';
 import IconFA from 'react-native-vector-icons/FontAwesome';
 import Util from '../util/utils';
-import Search from './Home/Search';
+import Search from './Common/Search';
 import Link from './Home/Link';
 import Carousel from './Home/Carousel';
 import Recommend from './Home/Recommend';
