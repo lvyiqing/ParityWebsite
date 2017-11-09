@@ -10,9 +10,13 @@ import {
 } from 'react-native';
 
 export default class Collection extends Component<{}> {
-    static navigationOptions = {
-      tabBarLabel: '收藏',
-    }
+    constructor() {
+        super();
+        this.state = {
+            selectedTab: '收藏',
+        }
+      }
+
     render() {
       return (
         <ScrollView>
