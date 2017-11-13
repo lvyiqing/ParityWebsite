@@ -23,32 +23,6 @@ import {
                 <Image style={styles.img} source={require('../../images/title1.png')}/>
             </View>
             <View style={{marginTop: Util.size.width/20,}}>
-                <TouchableHighlight>
-                    <View style={styles.touch}>
-                        <View style={styles.loglink}>
-                            <View style={styles.icon}>
-                                <IconFA size={20} name="user" />
-                            </View>
-                            <View style={styles.text}>
-                                <Text>淘宝帐号登录</Text>
-                            </View>
-                        </View>
-                    </View>
-                </TouchableHighlight>
-                <TouchableHighlight>
-                    <View style={styles.touch}>
-                        <View style={styles.loglink}>
-                            <View style={styles.icon}>
-                                <IconFA size={20} name="user" />
-                            </View>
-                            <View style={styles.text}>
-                                <Text>微信账号登录</Text>
-                            </View>
-                        </View>
-                    </View>
-                </TouchableHighlight>
-            </View>
-            <View style={{marginTop: Util.size.width/20,}}>
                 <View style={styles.touch}>
                     <TextInput style={styles.input} underlineColorAndroid= 'transparent' placeholder="邮箱"/>
                 </View>
@@ -65,7 +39,9 @@ import {
             </View>
             <View style={styles.touch}>
                 <View style={styles.longin}>
+                    <TouchableHighlight>
                     <Text>登录</Text>
+                    </TouchableHighlight>
                 </View>
             </View>
             <View style={[styles.touch,{marginTop: Util.size.width/40,}]}>
@@ -82,27 +58,19 @@ import {
       imgview: {
         flexDirection: 'row',
         justifyContent: 'center',
-        width: Util.size.width/1,
-        height: Util.size.height/8,
+        height: Util.size.height/14,
+      },
+      interval: {
+        marginTop: Util.size.height/10,
       },
       touch: {
         flexDirection: 'row',
         justifyContent: 'center',
       },
       img: {
-        marginTop: Util.size.width/20,
-        width: Util.size.width/1.8,
-        height: Util.size.height/10,
-      },
-      loglink: {
-        flexDirection: 'row',
-        marginTop: Util.size.width/20,
-        width:Util.size.width/1.4,
-        height:Util.size.height/15,
-        backgroundColor: 'white',
-        borderColor: '#ea5252',
-        borderWidth: 1,
-        borderRadius: 10,
+        marginTop: Util.size.width/8,
+        width: Util.size.width/2.4,
+        height: Util.size.height/14,
       },
       icon: {
         paddingLeft: Util.size.width/40,
@@ -117,13 +85,14 @@ import {
         alignItems: 'center',
       },
       input: {
+        marginTop: Util.size.height/8,
         width: Util.size.width/1.4,
         height: Util.size.height/15,
         borderRadius: 10,
         backgroundColor: 'white',
       },
       longin: {
-        marginTop: Util.size.width/20,
+        marginTop: Util.size.width/8,
         width: Util.size.width/1.4,
         height: Util.size.height/15,
         backgroundColor: '#B8B8B8',
