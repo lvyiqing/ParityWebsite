@@ -1,22 +1,32 @@
 import React, { Component } from 'react';
 import {
-    Platform,
-    StyleSheet,
-    Text,
-    View,
-    ScrollView,
-    TextInput,
-    Image
+  StyleSheet,
+  Text,
+  View,
+  ActivityIndicator,
+  ListView,
 } from 'react-native';
-import TabNavigator from 'react-native-tab-navigator';
+import moment from 'moment';
+import {PullList} from 'react-native-pull';
+import Util from '../../util/Utils';
+import Refresh from '../Common/Refresh';
+export default class extends Component {
 
-export default class EditInfo extends Component<{}> {
+	constructor(props) {
+        super(props);
+    }
 
     render() {
         return (
-            <ScrollView>
-            <Text>个人信息修改页面</Text>
-            </ScrollView>
+            <Refresh renderRow={this.renderRow.bind(this)}/>
         );
+    }
+
+    renderRow(item, sectionID, rowID, highlightRow) {
+      return (
+          <View style={{height: 50, backgroundColor: '#fafafa', alignItems: 'center', justifyContent: 'center'}}>
+              <Text>{item.title}</Text>
+          </View>
+      );
     }
 }
