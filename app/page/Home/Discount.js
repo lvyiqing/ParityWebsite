@@ -12,31 +12,31 @@ import {
 } from 'react-native';
 import Util from '../../util/Utils';
 
-export default class Recommend extends Component<{}> {
+export default class Discount extends Component<{}> {
     _data = [
         {title: '1',
         name:'双11预告： Yeezy 10000元包邮 心动不如行动 抓紧抢购吧 现在予定即可领200元优惠券',
-        value: require('../../images/yezi.jpg'),
+        value: require('../../images/youhui.jpg'),
         },
         {title: '2',
         name:'双11预告： Yeezy 10000元包邮 心动不如行动 抓紧抢购吧 现在予定即可领200元优惠券',
-        value: require('../../images/yezi.jpg'),
+        value: require('../../images/youhui.jpg'),
         },
         {title: '4',
         name:'双11预告： Yeezy 10000元包邮 心动不如行动 抓紧抢购吧 现在予定即可领200元优惠券',
-        value: require('../../images/yezi.jpg'),
+        value: require('../../images/youhui.jpg'),
         },
         {title: '5',
         name:'双11预告： Yeezy 10000元包邮 心动不如行动 抓紧抢购吧 现在予定即可领200元优惠券',
-        value: require('../../images/yezi.jpg'),
+        value: require('../../images/youhui.jpg'),
         },
         {title: '6',
         name:'双11预告： Yeezy 10000元包邮 心动不如行动 抓紧抢购吧 现在予定即可领200元优惠券',
-        value: require('../../images/yezi.jpg'),
+        value: require('../../images/youhui.jpg'),
         },
         {title: '7',
         name:'双11预告： Yeezy 10000元包邮 心动不如行动 抓紧抢购吧 现在予定即可领200元优惠券',
-        value: require('../../images/yezi.jpg'),
+        value: require('../../images/youhui.jpg'),
         },
     ]
 
@@ -64,7 +64,7 @@ export default class Recommend extends Component<{}> {
 
     render() {
         return(
-            <View ref='hot1' style={styles.block}>
+            <View style={styles.block}>
                 <ListView
                 dataSource = {this.state.dataSource}
                 renderRow = {this.renderRow.bind(this)}
@@ -96,7 +96,6 @@ const styles = StyleSheet.create({
     hotright: {
         width:Util.size.width/2,
         height: Util.size.height/6,
-        justifyContent: 'center',
     },
     hotimage: {
         height: Util.size.height/6,

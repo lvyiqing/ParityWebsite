@@ -32,7 +32,7 @@ constructor() {
                         renderIcon={() => <IconFA size={25} name="home" />}
                         renderSelectedIcon={() =><IconFA size={25} style={{color: "#ea5252",}} name="home" />}
                         onPress={() => this.setState({ selectedTab: '首页' })}>
-                        <Home />
+                        <Home navigation={this.props.navigation}/>
                     </TabNavigator.Item>
                     <TabNavigator.Item
                         selected={this.state.selectedTab === '比价'}

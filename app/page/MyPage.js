@@ -18,6 +18,8 @@ import EditInfo from './MyPage/EditInfo';
 import Collection from './Collection';
 import Suggestion from './MyPage/Suggestion';
 import AboutOurs from './MyPage/AboutOurs';
+import Search from './Common/Login';
+import Register from './Common/Register';
 
 class MyPage extends Component {
     static navigationOptions = {
@@ -31,7 +33,7 @@ class MyPage extends Component {
       const { navigate } = this.props.navigation;
       return (
         <ScrollView style={{backgroundColor: '#efede8'}}>
-            <TouchableHighlight>
+            <TouchableHighlight onPress={() => navigate('Search')}>
                 <View style={styles.headView}>
                     <View style={styles.head}>
                         <View style={styles.imgView}>
@@ -101,6 +103,7 @@ class MyPage extends Component {
     Collection: {screen: Collection},
     Suggestion: {screen: Suggestion},
     AboutOurs: {screen: AboutOurs},
+    Search: {screen: Search},
   });
 
   export default App;
