@@ -10,22 +10,14 @@ import {
   TouchableHighlight
 } from 'react-native';
 import Util from '../../util/Utils';
+import NavigationSearch from './NavigationSearch'
 
 export default class Search extends Component<{}> {
     static navigationOptions = {
-      tabBarVisible:false,
-      headerTitle: <View style={{flexDirection: 'row', justifyContent: 'center', alignItems: 'center',}}>
-        <TextInput underlineColorAndroid= 'transparent' style={{
-        width: Util.size.width/1.6,
-        height: Util.size.width/10, 
-        borderWidth: 1,
-        paddingTop: Util.size.width/50,
-        paddingBottom: Util.size.width/50,
-        borderColor: '#CCC',
-        borderRadius: 4,
-    }} placeholder="请输入商品关键字"/>
-    <Text style={{color:"black", justifyContent: 'center', paddingLeft: Util.size.width/20,}}>搜索</Text></View>,
+        visible: true,
+        headerTitle: <NavigationSearch />,
     }
+    
     render() {
       return (
         <ScrollView>
@@ -73,7 +65,7 @@ export default class Search extends Component<{}> {
       width: Util.size.width/5,
       height: Util.size.width/15,
       borderWidth: 1,
-      borderRadius: 30,
+      borderRadius: 10,
       borderColor: '#B8B8B8',
       backgroundColor: '#B8B8B8',
       flexDirection: 'column',

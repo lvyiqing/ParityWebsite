@@ -65,7 +65,7 @@ import {
                 <View style={styles.agree}>
                     <View style={styles.agree1}>
                         <View>
-                            <TouchableHighlight onPress={this.change.bind(this)}>
+                            <TouchableHighlight underlayColor='white' onPress={this.change.bind(this)}>
                                 <View style={styles.radio}>
                                     {this.state.text === 1 ? <View style={styles.radio1}></View> : <View></View>} 
                                 </View>
